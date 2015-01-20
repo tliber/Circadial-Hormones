@@ -17,28 +17,32 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+ Visulization of daily hormonal cycle. 
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
+  The tool was made with young scientists in mind. 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  A graphical summery of the diurnal cycle. Data taken from 
+  http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2681273/
+  http://www.specialtylabs.com/clients/gbmc/books/display.asp?id=1052
 
 ## Problem ##
-  > Describe the problem your product solves.
-
+  Science students are often visual learners. While graphs are often times provided
+  in test books, they tend to have to much convoluted information which tend to
+  confuse them.
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-
+  This visualization tool allows students to examine the data by showing
+  the entire daily cycle.
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  May your brain overcome your ego.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Click on the time of day and watch the homemones display!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  Thank you!!!This tool definatly helped me get an A+
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Looking forward to expanding the project  with the help of
+  contibutions. Open to suggestions. Shoot me an email if you
+  wish to post this somewhere or want to contribute in some way. 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' type='css' href='styles.css'> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="options">
+      <button class = "runDay" type="button">Run the day</button>
+      <select id = "timesOfDay">
+                
+        <option value="null"></option>
+        <option value="2h">2am</option>
+        <option value="6h">6am</option>
+        <option value="10h">10am</option>
+        <option value="14h">2pm</option>
+        <option value="18h">6pm</option>
+        
+        <option value="22h">10pm</option>
+      </select class="Hormone Type">
+        <select>
+        <option value="Test">Testosterone</option>
+        <option value="Cort">Cortisol</option>
+        <option value="Temp">Body Temperature</option>
+      </select>
+    </div>
+      <script src="../node_modules/requirejs/require.js"></script>
+      <script src="d3.js" charset="utf-8"></script>
+      <script src='data.js'></script>
+      <script src ='movement.js'> </script>
+  </body>
+</html>
