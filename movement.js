@@ -65,11 +65,11 @@ var width = 100;
 var screenSizeLength = 1400;
 var screenSizeHeigth = 500;
 var jsonCircles = [
-   { "x_axis": 100, "y_axis": 111.111, "width": 100,'height':888.888, "color" : "orange",'id': 'Test', 'hormone' : Data.Test, 'innerText' : 'Ts','units':" mnol/l",'currentVal': 0},
-   { "x_axis": 300, "y_axis": 500, "width": 100,'height':500, "color" : "purple", 'id':'Cort', 'hormone' : Data.Cort, 'units': " mg/dl", 'innerText': 'Co','currentVal': 0 },
-   { "x_axis": 500, "y_axis": 500, "width": 100,'height':500, "color" : "red",'id' : 'Temp', 'hormone' : Data.Temp,'units':' C', "innerText" : 'Tm','currentVal': 0},
-   { "x_axis": 700, "y_axis": 238.1, "width": 100,'height':762, "color" : "grey",'id' : 'Mel', 'hormone' : Data.Mel, "innerText" : 'Ml', 'extraDet' : 'plasma serotonin',"units":' pmol/L','currentVal': 0},
-   { "x_axis": 920, "y_axis": 0, "width": 100,'height':1000, "color" : "magenta",'id' : 'GHG', 'hormone' : Data.Hgh, "innerText" : 'Hgh', 'units':' ng ml^-1' ,'currentVal': 0}]
+   { "x_axis": 150, "y_axis": 111.111, "width": 100,'height':888.888, "color" : "orange",'id': 'Test', 'hormone' : Data.Test, 'innerText' : 'Ts','units':" mnol/l",'currentVal': 0},
+   { "x_axis": 350, "y_axis": 500, "width": 100,'height':500, "color" : "purple", 'id':'Cort', 'hormone' : Data.Cort, 'units': " mg/dl", 'innerText': 'Co','currentVal': 0 },
+   { "x_axis": 550, "y_axis": 500, "width": 100,'height':500, "color" : "red",'id' : 'Temp', 'hormone' : Data.Temp,'units':' C', "innerText" : 'Tm','currentVal': 0},
+   { "x_axis": 750, "y_axis": 238.1, "width": 100,'height':762, "color" : "grey",'id' : 'Mel', 'hormone' : Data.Mel, "innerText" : 'Ml', 'extraDet' : 'plasma serotonin',"units":' pmol/L','currentVal': 0},
+   { "x_axis": 970, "y_axis": 0, "width": 100,'height':1000, "color" : "magenta",'id' : 'GHG', 'hormone' : Data.Hgh, "innerText" : 'Hgh', 'units':' ng ml^-1' ,'currentVal': 0}]
    // { "x_axis": 450, "y_axis": 250, "radius": 50, "color" : "red",'id' : 'Temp', 'hormone' : Data.Temp, "innerText" : 'Tm' }
 
 var addZero = function(i) {
@@ -120,7 +120,7 @@ var axisScale = d3.scale.linear()
 
 var yAxis = d3.svg.axis()
   .scale(axisScale)
-  .orient('left').ticks(10)
+  .orient('right').ticks(10)
 AxisGroup = svg.append("g").call(yAxis);
 // typeof(xAxis, 'wefewf');
 
@@ -190,6 +190,10 @@ setInterval(updateText, 10)
 
 
 var changeTime = function(timeOfDay){
+	var r = /\d+/ 
+	timeOfDay.match(r)
+	
+	makeClock(timeOfDay.match(r),00)
 	d3.selectAll('rect')
   .data(jsonCircles)
   .transition(transitionTime)
