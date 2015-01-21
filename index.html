@@ -5,8 +5,22 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </head>
   <body>
+    <div id = 'info'>
+    <container>
+    <ul>
+      <a href='http://en.wikipedia.org/wiki/1-Testosterone'>Testosterone</>
+      <a href='http://en.wikipedia.org/wiki/Cortisol'>Cortisol</a>
+      <a href = 'http://en.wikipedia.org/wiki/Human_body_temperature'>Body Tempurature</a>
+      <a href = 'http://en.wikipedia.org/wiki/Melatonin'>Melatonin</a>
+      <a href = 'http://en.wikipedia.org/wiki/Growth_hormone'>Growth Hormone</a>
+      <a href = 'http://en.wikipedia.org/wiki/Circadian_rhythm'>Circadial Rhythm</a>
+    <ul>
+    </container>
+
+    <div>
     <div class="options">
-      <button class = "runDay" type="button">Run the day</button>
+      
+      <button class = "runDay" type="button">Run the day (2pm - 2pm)</button>
       <select id = "timesOfDay">
                 
         <option value="null"></option>
@@ -17,16 +31,15 @@
         <option value="18h">6pm</option>
         
         <option value="22h">10pm</option>
-      </select class="Hormone Type">
-        <select>
-        <option value="Test">Testosterone</option>
-        <option value="Cort">Cortisol</option>
-        <option value="Temp">Body Temperature</option>
-      </select>
+      
+      </select> 
+      <span id="clock">clock</span>
+        
+        
+      <!-- </select> -->
+    
     </div>
-      <script src="../node_modules/requirejs/require.js"></script>
       <script src="d3.js" charset="utf-8"></script>
-      <script src='data.js'></script>
       <script src ='movement.js'> </script>
   </body>
 </html>
