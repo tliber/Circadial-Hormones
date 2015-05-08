@@ -4,6 +4,6 @@
     "Name": "ubuntu:14.04"
   },
   "Ports": [{
-    "ContainerPort": "8000"
+    "ContainerPort": "8080"
   }]
 }
