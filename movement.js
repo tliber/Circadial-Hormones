@@ -148,29 +148,29 @@ var updateText = function(){
 
 	}
 setInterval(updateText, 10)
-
 var changeTime = function(timeOfDay){
-	console.log(timeOfDay)
+  console.log(timeOfDay)
   var r = /\d+/ 
-  timeOfDay.match(r)	
-	makeClock(timeOfDay.match(r),00)
-	d3.selectAll('rect')
+  timeOfDay.match(r)  
+  makeClock(timeOfDay.match(r),00)
+  d3.selectAll('rect')
   .data(jsonCircles)
   .transition(transitionTime)
   .duration(transitionTime)
   .attr("y", function(d){ 
-  	d['currentVal'] = (d['hormone'][timeOfDay])
-  	return d['hormone'].Y(timeOfDay)})
+    d['currentVal'] = (d['hormone'][timeOfDay])
+    return d['hormone'].Y(timeOfDay)})
   .attr('height',function(d){
-  	return (1000 - d['hormone'].Y(timeOfDay))
+    return (1000 - d['hormone'].Y(timeOfDay))
   }
   )}
 
 
 $("#timesOfDay").on('change',(function () {
-   	changeTime($(this).val()) 
+    changeTime($(this).val()) 
   }))
 
+changeTime('2h');
 $('.runDay').on('click', function(){
   var count = 0;
   allDataHourPoints.forEach(function(el, i){
